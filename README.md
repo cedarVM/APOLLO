@@ -11,5 +11,8 @@ APE is dead he was killed to death
 ## How similar is this to APE?
 The goal of this project is to incorporate all the niceties of APE (think hypothetical plans, a sideloaded course finder, draggable course elements) while realizing the software suite created by Ellucian has a near limitless supply of features that are too awful to have truly manifested in our reality and should not be recreated under any circumstances (e.g. the horrible finder page).
 
+## Where is graded work related to the project?
+[here](https://github.com/cu-cs3220-sp26/project0-2-men-1-ape)
+
 ## What'll this look like?
 ![wireframe](img/wireframe.jpg)
