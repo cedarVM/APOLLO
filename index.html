@@ -1,62 +1,17 @@
 <html>
 	<head>
-	<title>Landing</title>
+		<title>APOLLO</title>
+		<link href="css/primary_style.css" rel="stylesheet"></link>
 	</head>
 
-	<body>
-	<!--Navbar-->
-	<div></div><div></div><div></div>
-	<!--Content-->
+	<div id="navigator_container">
+		<div id="dashboard_link">dashboard</div> <!-- need listeners for these -->
+		<div id="planner_link">loaded plan</div>
+		<div id="finder_link">course finder</div>
+	</div>
 
-<form action="form-processor" method="POST">
-   <p>Select a flavor:</p>
-   <div>                                
-      <input type="color" name="nonflavor">
-      <input type="number" name="unonflavor">
-   </div>
-   <div>
-      <input type="radio" name="flavor" value="2">
-      <label for="van">Vanilla</label>
-   </div>
-   <div>                                
-      <input type="radio" name="flavor" value="3">
-      <label for="straw">Strawberry</label>
-   </div>
-
-   <p>Select toppings:</p>
-   <div>                                
-      <input type="checkbox" name="topping-whip">
-      <label for="whip">Whipped Cream</label>
-   </div>
-   <div>
-      <input type="checkbox" name="topping-nuts" checked>
-      <label for="nuts">Nuts</label>
-   </div>
-
-   <p>
-      <input type="submit" value="Order">
-   </p>
-</form>
-	<table>
-		<caption>Wow! I'm like LaTeX, but worse!</caption>
-
-		<tr>
-		<th rowspan="2">cringe</th>
-		<th rowspan="2">uncringe</th>
-		</tr>
-
-		<tr>
-		<td rowspan="2">record1</td>
-		<td rowspan="2">record2</td>
-		</tr>
-
-		<tr>
-		<td rowspan="2" colspan="2">record3</td>
-		<td rowspan="2">record4</td>
-		</tr>
-	</table>
-
-	</body>
-
+	<embed type="text/html" src=i0.html class="dashboard">
+	<embed type="text/html" src=i1.html class="planner">
+	<embed type="text/html" src=i2.html class="finder">
+	<script src="js/scrumplib.js"></script>
 </html>
-

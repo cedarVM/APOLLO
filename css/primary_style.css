@@ -1,0 +1,94 @@
+body {
+margin: 0px;
+}
+
+#navigator_container {
+display: grid;
+width: 100%;
+height: 10%;
+grid-template-areas:
+"dash plan find";
+}
+
+#dashboard_link {
+background-color: orange;
+grid-area: dash;
+}
+
+#planner_link {
+background-color: blue;
+grid-area: plan;
+}
+
+#finder_link {
+background-color: red;
+grid-area: find;
+}
+
+
+// do not touch
+.dashboard {
+width: 100%;
+height: 100%;
+}
+
+.planner {
+width: 100%;
+height: 100%;
+}
+
+.finder {
+width: 100%;
+height: 100%;
+}
+
+#dashboard_container {
+display: grid;
+width: 100%;
+height: 100%;
+/*position: relative*/
+grid-template-areas:
+"info info info iden iden"
+"swiv swiv swiv swiv spac";
+}
+
+#card_generic {
+width: 30%;
+height: 30%;
+position: absolute;
+/*bottom: 0px;*/
+display: inline-block;
+align: center;
+}
+
+/*  */
+
+#planner_container {
+width: 100%;
+background-color: blue;
+}
+
+#finder_container {
+width: 100%;
+background-color: red;
+}
+
+#infokiosk {
+background-color: green;
+grid-area: info;
+}
+
+#identity {
+background-color: blue;
+grid-area: iden;
+}
+
+#swivel {
+background-color: red;
+grid-area: swiv;
+}
+
+#bspace {
+background-color: yellow;
+grid-area: spac;
+}
