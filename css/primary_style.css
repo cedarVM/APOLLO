@@ -42,34 +42,44 @@ width: 100%;
 height: 100%;
 }
 
+#belt {
+width: 100%;
+height: 5%;
+background-color: blue;
+}
+
 #dashboard_container {
 display: grid;
 width: 100%;
 height: 100%;
-/*position: relative*/
 grid-template-areas:
 "info info info iden iden"
 "swiv swiv swiv swiv spac";
+grid-template-rows: 50% 50%;
 }
 
 #card_generic {
-width: 30%;
-height: 30%;
-position: absolute;
-/*bottom: 0px;*/
-display: inline-block;
-align: center;
+width: 50mm;
+height: 40mm;
+display: block;
+margin: 10% -200px 0px 10px;
+margin-block-end: -100px;
 }
 
-/*  */
-
 #planner_container {
+display: grid;
+/*grid-template-areas:
+"info info info iden iden"
+"swiv swiv swiv swiv spac";
+grid-template-rows: 50% 50%;*/
 width: 100%;
+height: 100%;
 background-color: blue;
 }
 
 #finder_container {
 width: 100%;
+height: 100%;
 background-color: red;
 }
 
@@ -92,3 +102,56 @@ grid-area: swiv;
 background-color: yellow;
 grid-area: spac;
 }
+
+/*
+/
+rgb(136 185 221)
+rgb(244 244 244)
+rgb(0 116 219)
+rgb(32 134 224)
+rgb(155 155 155)
+rgb(234 247 242)
+rgb(0 128 77)
+rgb(68 68 68)
+rgb(0 58 99) -- top banner
+rgb(0 45 86) -- lower top banner
+
+rgb(239 199 40) -- yellow course banner
+rgb(138 106 0) -- draft banner
+rgb(40 116 187) -- esg_badge pending
+rgb(212 40 40) -- esg_badge failure
+
+-- green banner I think?
+    box-shadow: inset 0 -.25rem 0 0 rgba(0,175,105,.15),0 0 0 .125rem #51abff
+	border: rgb(0 128 77)
+
+light blue
+rgb(81 171 255)
+
+-- error
+rgb(212 40 40)
+
+-- blue/purp
+rgb(54 54 201)
+
+box-sizing: border-box
+
+background: linear-gradient(180deg,rgb(114 114 217) 0,#5353d1);
+
+
+    background: #7272d9;
+    background: linear-gradient(180deg,rgb(114 114 217) 0,#5353d1);
+    box-shadow: inset 0 0 .75rem 0 rgba(0,0,0,.6);
+    z-index: -1;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= "#ffffff",endColorstr="#000000",GradientType=0);
+    mix-blend-mode: multiply
+
+    background-color: #bdbdbd;
+    background-image: url(https://cdn.elluciancloud.com/assets/1.5.1/img/image-sign-in-bw.jpg);
+    background-position: 50%;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -2;
+    background-blend-mode: luminosity;
+    filter: blur(5px)
+*/
